@@ -1,0 +1,24 @@
+# Workflow
+# Should have a name.
+
+# Jobs
+# Should be inside of workflow.
+
+# Steps
+# Should be inside of job.
+
+# actions
+# Should be inside of steps.
+
+
+name: test
+on: 
+  workflow_dispatch:
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greeting
+        run: echo "this is the first job"
+  
+
